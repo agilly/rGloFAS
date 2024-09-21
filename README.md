@@ -4,9 +4,6 @@
 ```r
 pak::pkg_install("agilly/rGloFAS")
 ```
-## Example notebook
-
-Have a look at `inst/examples/example.ipynb`.
 
 ## Usage
 ```r
@@ -52,3 +49,7 @@ createAOI(aoi_name = "South VTE", description = "Sisattanak, Xaysetha, Hadxaifon
 ```
 
 You will receive the AOI ID in the response. You can use this ID to order products for this AOI.
+
+## Example notebook
+
+A rather untidy example of [a notebook using rGLoFAS](https://github.com/agilly/rGloFAS/blob/main/inst/examples/example.ipynb).
