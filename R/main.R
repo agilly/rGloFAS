@@ -29,6 +29,7 @@ genericGloFASAPICall=function(endpoint, method="GET", body=NULL, headers=NULL, e
 #' @importFrom httr add_headers
 #' @importFrom httr content
 #' @importFrom glue glue
+#' @importFrom pkgload pkg_name
 glofasAPILogin=function(force=FALSE){
     # if we are still logged in, return the token
     if(!is.null(pkgenv$token) && !is.null(pkgenv$expiresAt) && Sys.time()<pkgenv$expiresAt && !force){
