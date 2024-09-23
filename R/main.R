@@ -57,7 +57,7 @@ glofasAPILogin=function(force=FALSE){
         existing_config=pkgenv$config
         existing_config$username=this_username
         existing_config$password=this_password
-        path=system.file("config/config.yml", package=utils::packageName())
+        path=system.file("config/config.yml", package=pkgload::pkg_name())
         cli::cli_inform("Storing username and password in {path}")
         yaml::write_yaml(existing_config, file=path)
     }
